@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nivelamento</title>
-    <script src="home.css"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivelamento</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+  <div class="evento">
     <h1 class="titulos">Evento</h1>
-    <input type="text"  class="inputs" placeholder="evento..." />
+    <input type="text" class="evento-input" placeholder="evento..." />
+  </div>
 
-    <h1>Local</h1>
-    <input type="text" class="inputs" placeholder="local..." />
+  <div class="local">
+    <h1 class="titulos">Local</h1>
+    <input type="text" class="local-input" placeholder="local..." />
+  </div>
 
+  <div class="convidados">
     <table>
       <tr>
         <th>Convidados</th>
@@ -28,11 +35,15 @@
         <td>Roberval Gomes</td>
       </tr>
     </table>
-    <h1>Nome</h1>
-    <input type="text" name="" id=""  class="inputs" placeholder="nome..." />
-    <button>Adicionar</button>
-    <button>Adicionar Evento</button>
+  </div>
 
+  <div class="nomes">
+    <h1 class="titulos">Nome</h1>
+    <input type="text" class="nome-input" placeholder="nome..." />
+    <button class="add">Adicionar</button>
+  </div>
+  <button class="add-evento">Adicionar Evento</button>
+  <div class="lista-eventos">
     <table>
       <tr>
         <th>id</th>
@@ -49,7 +60,7 @@
           <li>Benício Souza</li>
         </td>
         <td>
-          <button>Excluir</button>
+          <button class="excluir">Excluir</button>
         </td>
       </tr>
       <tr>
@@ -62,9 +73,12 @@
           <li>Lucas Duarte</li>
         </td>
         <td>
-          <button>Excluir</button>
+          <button class="excluir">Excluir</button>
         </td>
       </tr>
     </table>
-  </body>
+  </div>
+
+</body>
+
 </html>

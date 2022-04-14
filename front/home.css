@@ -1,5 +1,100 @@
-.titulos{
-    font-size: 30px;
-    font-weight: bold;
-    color: blue;
+body {
+  padding: 40px;
+}
+.evento {
+  display: flex;
+  align-items: center;
+}
+
+.titulos {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3d80cc;
+}
+
+.local {
+  display: flex;
+  align-items: center;
+}
+
+.evento-input {
+  margin-left: 40px;
+  border-color: #3d80cc;
+  width: 200px;
+  height: 30px;
+}
+
+.local-input {
+  margin-left: 55px;
+  border-color: #3d80cc;
+  width: 200px;
+  height: 30px;
+}
+
+.convidados {
+  margin-left: 30px;
+}
+
+.nomes {
+  display: flex;
+  align-items: center;
+}
+
+.nome-input {
+  margin-left: 45px;
+  border-color: #3d80cc;
+  width: 200px;
+  height: 30px;
+}
+
+.add {
+  border-color: #3d80cc;
+  margin-left: 40px;
+  width: 120px;
+  height: 35px;
+  color: #3d80cc;
+  font-weight: bolder;
+  background-color: #ededed;
+}
+
+.add-evento {
+  border-color: #3d80cc;
+  width: 180px;
+  height: 35px;
+  color: #3d80cc;
+  font-weight: bolder;
+  background-color: #c7c7c7;
+}
+
+.lista-eventos {
+  margin-top: 20px;
+}
+
+.excluir {
+  border-color: #3d80cc;
+  margin-left: 40px;
+  width: 120px;
+  height: 35px;
+  color: #3d80cc;
+  font-weight: bolder;
+  background-color: #ededed;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+td:last-of-type {
+  border: none;
+}
+
+tr:first-child {
+  background-color: #cccccc;
 }
