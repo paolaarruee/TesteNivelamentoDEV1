@@ -19,8 +19,8 @@ public class TesteApplication {
 	public CommandLineRunner nomeEvento(EventosRepository repository) {
 		return (args) -> {
 			// criando objetos
-			repository.save(new Eventos(0, "evento", "local", "nome", 10));   
-			repository.save(new Eventos(0, "evento2", "local2", "nome2", 30));
+			repository.save(new Eventos(0, "evento", "local", "Fulano", 10));   
+			repository.save(new Eventos(0, "evento2", "local2","Ciclano", 30));
 				
 		};
 

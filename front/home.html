@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nivelamento</title>
   <link rel="stylesheet" type="text/css" href="home.css">
+  <script defer src="home.js"></script>
 </head>
 
 <body>
@@ -22,25 +23,21 @@
 
   <div class="convidados">
     <table>
-      <tr>
-        <th>Convidados</th>
-      </tr>
-      <tr>
-        <td>João da Silva</td>
-      </tr>
-      <tr>
-        <td>Maria do Exemplo</td>
-      </tr>
-      <tr>
-        <td>Roberval Gomes</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Convidados</th>
+        </tr>
+      </thead>
+      <tbody id="listaConvidadosRef">
+
+      </tbody>
     </table>
   </div>
 
   <div class="nomes">
     <h1 class="titulos">Nome</h1>
-    <input type="text" class="nome-input" placeholder="nome..." />
-    <button class="add">Adicionar</button>
+    <input type="text" class="nome-input" placeholder="nome..." id="nomeConvidado"/>
+    <button class="add" onclick="adicionarConvidado()">Adicionar</button>
   </div>
   <button class="add-evento">Adicionar Evento</button>
   <div class="lista-eventos">
@@ -51,31 +48,9 @@
         <th>Local</th>
         <th>Convidados</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>Festa de Natal</td>
-        <td>Salão de Festa</td>
-        <td>
-          <li>Ana Julia Alves</li>
-          <li>Benício Souza</li>
-        </td>
-        <td>
-          <button class="excluir">Excluir</button>
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Salão de Festa</td>
-        <td>Cobertura</td>
-        <td>
-          <li>Vinicius Novaes</li>
-          <li>Joana Moraes</li>
-          <li>Lucas Duarte</li>
-        </td>
-        <td>
-          <button class="excluir">Excluir</button>
-        </td>
-      </tr>
+     <tbody id="listaEventosRef">
+
+      </tbody>
     </table>
   </div>
 
