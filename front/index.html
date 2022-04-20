@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./main.js"></script>
+    <title>Nivelamento</title>
+  </head>
+  <body>
+    <form onsubmit="cadastraEvento(event)">
+      <div class="evento">
+        <h1 class="titulos">Evento</h1>
+        <input
+          type="text"
+          class="evento-input"
+          placeholder="evento..."
+          id="tituloEventoInputRef"
+        />
+      </div>
+
+      <div class="local">
+        <h1 class="titulos">Local</h1>
+        <input
+          type="text"
+          class="local-input"
+          placeholder="local..."
+          id="localEventoInputRef"
+        />
+      </div>
+
+      <div class="convidados">
+        <table>
+          <thead>
+            <tr>
+              <th>Convidados</th>
+            </tr>
+          </thead>
+          <tbody id="convidadosTabelaRef"></tbody>
+        </table>
+      </div>
+
+      <div class="nomes">
+        <h1 class="titulos">Nome</h1>
+        <input
+          type="text"
+          class="nome-input"
+          placeholder="nome..."
+          id="nomeConvidadoInputRef"
+        />
+        <button type="button" class="add" onclick="adicionaConvidado()">Adicionar</button>
+      </div>
+      <button type="submit" class="add-evento">
+        Adicionar Evento
+      </button>
+      <div class="lista-eventos">
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Evento</th>
+              <th>Local</th>
+              <th>Convidados</th>
+            </tr>
+          </thead>
+          <tbody id="eventosTabelaRef"></tbody>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
